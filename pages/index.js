@@ -58,13 +58,28 @@ export default function Home() {
         </h1>
         <div className="space-y-4">
           <label className="block text-sm font-medium text-gray-300">Webhook URL</label>
-          <input className="border border-gray-700 bg-gray-800 text-white rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" value={url} onChange={(e) => setUrl(e.target.value)} />
+          <input
+            className="border border-gray-700 bg-gray-800 text-white rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+          />
           <label className="block text-sm font-medium text-gray-300">YouTube Video URL</label>
-          <input className="border border-gray-700 bg-gray-800 text-white rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" value={videoUrl} onChange={(e) => setVideoUrl(e.target.value)} />
+          <input
+            className="border border-gray-700 bg-gray-800 text-white rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            value={videoUrl}
+            onChange={(e) => setVideoUrl(e.target.value)}
+          />
           <label className="block text-sm font-medium text-gray-300">User ID</label>
-          <input className="border border-gray-700 bg-gray-800 text-white rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" value={userId} onChange={(e) => setUserId(e.target.value)} />
+          <input
+            className="border border-gray-700 bg-gray-800 text-white rounded-lg w-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            value={userId}
+            onChange={(e) => setUserId(e.target.value)}
+          />
 
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl transition transform hover:-translate-y-0.5 hover:scale-105 shadow-md hover:shadow-lg" onClick={sendWebhook}>
+          <button
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-xl transition transform hover:-translate-y-0.5 hover:scale-105 shadow-md hover:shadow-lg"
+            onClick={sendWebhook}
+          >
             🚀 Send Webhook
           </button>
         </div>
