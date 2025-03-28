@@ -1,3 +1,4 @@
-@tailwind base;
+export const globalsCss = `@tailwind base;
 @tailwind components;
 @tailwind utilities;
+`;
